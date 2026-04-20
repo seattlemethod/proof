@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 2/16/2021 11:06:46 AM -->
+<!-- IS1 -->
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xmlns:fac='https://github.com/seattlemethod/fac'
+
+  xmlns:is1='https://github.com/seattlemethod/fac/reportingStyle/is1'
+  targetNamespace='https://github.com/seattlemethod/fac/reportingStyle/is1'
+
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+    <documentation>IS1</documentation>
+    <appinfo>
+      <link:linkbaseRef  xlink:href='../associations/Network-IS1-relations.xml' xlink:type='simple' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' />
+      <link:linkbaseRef  xlink:href='../rules-consistency/Consistency-IS03-formula.xml' xlink:type='simple' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' />
+
+      <link:linkbaseRef  xlink:href='../rules-derivation/ImputeRule-301-CI-Impute-001-formula.xml' xlink:type='simple' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' />
+
+    </appinfo>
+  </annotation>
+  <import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+  <import namespace='http://www.xbrl.org/2003/linkbase' schemaLocation='http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd' />
+  <import namespace='https://github.com/seattlemethod/fac' schemaLocation='../fac.xsd' />
+
+
+</schema>
