@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 11/1/2021 11:41:37 AM -->
+<!-- Public Domain Dedication: https://creativecommons.org/publicdomain/zero/1.0/ -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+   <link:roleRef xlink:type='simple' xlink:href='type-subtype-elr-roles.xsd#NetIncome' roleURI='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/NetIncome'/>
+
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-arcroles.xsd#has-part' arcroleURI='https://github.com/seattlemethod/universal/cm/arcrole/has-part'/>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/NetIncome' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_NetIncome' xlink:label='proof_NetIncome' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_Expenses' xlink:label='proof_Expenses' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='proof_Expenses' xlink:from='proof_NetIncome' order='1' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/NetIncome' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_NetIncome' xlink:label='proof_NetIncome' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_Losses' xlink:label='proof_Losses' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='proof_Losses' xlink:from='proof_NetIncome' order='3' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/NetIncome' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_NetIncome' xlink:label='proof_NetIncome' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_Revenues' xlink:label='proof_Revenues' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='proof_Revenues' xlink:from='proof_NetIncome' order='4' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/NetIncome' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_NetIncome' xlink:label='proof_NetIncome' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_Gains' xlink:label='proof_Gains' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='proof_Gains' xlink:from='proof_NetIncome' order='5' use='optional' />
+   </link:definitionLink>
+
+</link:linkbase>

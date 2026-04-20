@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 11/1/2021 11:41:37 AM -->
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xmlns:elr2='https://github.com/seattlemethod/type/elr2'
+  xmlns:generic='http://xbrl.org/2008/generic'
+  targetNamespace='https://github.com/seattlemethod/type/elr2'
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+    <appinfo>
+
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Abstract'
+                 id='Abstract'>
+                 <link:definition>Abstract</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Concept'
+                 id='Concept'>
+                 <link:definition>Concept</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Dimensions'
+                 id='Dimensions'>
+                 <link:definition>Dimensions</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Hypercubes'
+                 id='Hypercubes'>
+                 <link:definition>Hypercubes</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/LineItems'
+                 id='LineItems'>
+                 <link:definition>LineItems</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Members'
+                 id='Members'>
+                 <link:definition>Members</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/NetCashFlow'
+                 id='NetCashFlow'>
+                 <link:definition>NetCashFlow</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/NetIncome'
+                 id='NetIncome'>
+                 <link:definition>NetIncome</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/TextBlocks'
+                 id='TextBlocks'>
+                 <link:definition>TextBlocks</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+         <link:roleType
+           roleURI = 'https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Things'
+                 id='Things'>
+                 <link:definition>Things</link:definition>
+                 <link:usedOn>link:presentationLink</link:usedOn>
+                 <link:usedOn>link:calculationLink</link:usedOn>
+                 <link:usedOn>link:definitionLink</link:usedOn>
+                 <link:usedOn>generic:link</link:usedOn>
+               </link:roleType>
+
+
+               <link:roleType
+                 roleURI = 'https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Flows'
+                       id='Flows'>
+                       <link:definition>Flows</link:definition>
+                       <link:usedOn>link:presentationLink</link:usedOn>
+                       <link:usedOn>link:calculationLink</link:usedOn>
+                       <link:usedOn>link:definitionLink</link:usedOn>
+                       <link:usedOn>generic:link</link:usedOn>
+                     </link:roleType>
+
+
+    </appinfo>
+  </annotation>
+  <import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+</schema>

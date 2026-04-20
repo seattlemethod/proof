@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 2/21/2022 1:25:30 PM -->
+<!-- Public Domain Dedication: https://creativecommons.org/publicdomain/zero/1.0/ -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+   <link:roleRef xlink:type='simple' xlink:href='type-subtype-elr-roles.xsd#Flows' roleURI='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Flows'/>
+
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-arcroles.xsd#class-subClass' arcroleURI='https://github.com/seattlemethod/universal/cm/arcrole/class-subClass'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-arcroles.xsd#has-part' arcroleURI='https://github.com/seattlemethod/universal/cm/arcrole/has-part'/>
+
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-proposed-arcroles.xsd#instant-inflow' arcroleURI='https://github.com/seattlemethod/universal/cm/proposed/arcrole/instant-inflow'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-proposed-arcroles.xsd#instant-outflow' arcroleURI='https://github.com/seattlemethod/universal/cm/proposed/arcrole/instant-outflow'/>
+
+
+
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Flows' xlink:title=''>
+     <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_Equity' xlink:label='proof_Equity' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_ComprehensiveIncome' xlink:label='proof_ComprehensiveIncome' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/proposed/arcrole/instant-inflow' xlink:to='proof_ComprehensiveIncome' xlink:from='proof_Equity' order='1' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Flows' xlink:title=''>
+     <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_Equity' xlink:label='proof_Equity' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_InvestmentsByOwners' xlink:label='proof_InvestmentsByOwners' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/proposed/arcrole/instant-inflow' xlink:to='proof_InvestmentsByOwners' xlink:from='proof_Equity' order='2' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Flows' xlink:title=''>
+     <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_Equity' xlink:label='proof_Equity' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_DistributionsToOwners' xlink:label='proof_DistributionsToOwners' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/proposed/arcrole/instant-outflow' xlink:to='proof_DistributionsToOwners' xlink:from='proof_Equity' order='3' use='optional' />
+   </link:definitionLink>
+
+
+
+
+
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Flows' xlink:title=''>
+     <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_NonvestedFairValue' xlink:label='proof_NonvestedFairValue' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_Granted' xlink:label='proof_Granted' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/proposed/arcrole/instant-inflow' xlink:to='proof_Granted' xlink:from='proof_NonvestedFairValue' order='1' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Flows' xlink:title=''>
+     <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_NonvestedFairValue' xlink:label='proof_NonvestedFairValue' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_Vested' xlink:label='proof_Vested' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/proposed/arcrole/instant-outflow' xlink:to='proof_Vested' xlink:from='proof_NonvestedFairValue' order='2' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Flows' xlink:title=''>
+     <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_NonvestedFairValue' xlink:label='proof_NonvestedFairValue' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_Forfeited' xlink:label='proof_Forfeited' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/proposed/arcrole/instant-outflow' xlink:to='proof_Forfeited' xlink:from='proof_NonvestedFairValue' order='3' use='optional' />
+   </link:definitionLink>
+
+
+
+
+
+
+
+
+
+
+
+</link:linkbase>

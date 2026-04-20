@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 11/1/2021 11:41:37 AM -->
+<!-- Public Domain Dedication: https://creativecommons.org/publicdomain/zero/1.0/ -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+   <link:roleRef xlink:type='simple' xlink:href='type-subtype-elr-roles.xsd#Things' roleURI='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Things'/>
+
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-arcroles.xsd#has-part' arcroleURI='https://github.com/seattlemethod/universal/cm/arcrole/has-part'/>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Things' xlink:title=''>
+     <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_LiabilitiesAndEquity' xlink:label='proof_LiabilitiesAndEquity' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_Liabilities' xlink:label='proof_Liabilities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='proof_Liabilities' xlink:from='proof_LiabilitiesAndEquity' order='2' use='optional' />
+   </link:definitionLink>
+
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Things' xlink:title=''>
+     <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_LiabilitiesAndEquity' xlink:label='proof_LiabilitiesAndEquity' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_Equity' xlink:label='proof_Equity' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='proof_Equity' xlink:from='proof_LiabilitiesAndEquity' order='4' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Things' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_Equity' xlink:label='proof_Equity' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_EquityAttributableToControllingInterests' xlink:label='proof_EquityAttributableToControllingInterests' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:to='proof_EquityAttributableToControllingInterests' xlink:from='proof_Equity' order='5' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Things' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_Equity' xlink:label='proof_Equity' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_EquityAttributableToNoncontrollingInterests' xlink:label='proof_EquityAttributableToNoncontrollingInterests' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:to='proof_EquityAttributableToNoncontrollingInterests' xlink:from='proof_Equity' order='6' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Things' xlink:title=''>
+     <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_Assets' xlink:label='proof_Assets' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_CurrentAssets' xlink:label='proof_CurrentAssets' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='proof_CurrentAssets' xlink:from='proof_Assets' order='7' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Things' xlink:title=''>
+     <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_Assets' xlink:label='proof_Assets' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_NoncurrentAssets' xlink:label='proof_NoncurrentAssets' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='proof_NoncurrentAssets' xlink:from='proof_Assets' order='8' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Things' xlink:title=''>
+     <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_Liabilities' xlink:label='proof_Liabilities' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_CurrentLiabilities' xlink:label='proof_CurrentLiabilities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='proof_CurrentLiabilities' xlink:from='proof_Liabilities' order='9' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Things' xlink:title=''>
+     <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_Liabilities' xlink:label='proof_Liabilities' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_NoncurrentLiabilities' xlink:label='proof_NoncurrentLiabilities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='proof_NoncurrentLiabilities' xlink:from='proof_Liabilities' order='10' use='optional' />
+   </link:definitionLink>
+
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Things' xlink:title=''>
+     <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_NetIncome' xlink:label='proof_NetIncome' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_IncomeFromNormalActivitiesOfEntity' xlink:label='proof_IncomeFromNormalActivitiesOfEntity' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='proof_IncomeFromNormalActivitiesOfEntity' xlink:from='proof_NetIncome' order='23' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Things' xlink:title=''>
+     <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_NetIncome' xlink:label='proof_NetIncome' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_IncomeFromPeripheralOrIncidentalTransactionsOfEntity' xlink:label='proof_IncomeFromPeripheralOrIncidentalTransactionsOfEntity' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='proof_IncomeFromPeripheralOrIncidentalTransactionsOfEntity' xlink:from='proof_NetIncome' order='24' use='optional' />
+   </link:definitionLink>
+
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Things' xlink:title=''>
+     <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_ComprehensiveIncome' xlink:label='proof_ComprehensiveIncome' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_OtherComprehensiveIncome' xlink:label='proof_OtherComprehensiveIncome' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:to='proof_OtherComprehensiveIncome' xlink:from='proof_ComprehensiveIncome' order='27' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Things' xlink:title=''>
+     <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_NetIncome' xlink:label='proof_NetIncome' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_ComprehensiveIncome' xlink:label='proof_ComprehensiveIncome' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:to='proof_NetIncome' xlink:from='proof_ComprehensiveIncome' order='28' use='optional' />
+   </link:definitionLink>
+
+
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Things' xlink:title=''>
+     <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_NetAssets' xlink:label='proof_NetAssets' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_Assets' xlink:label='proof_Assets' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='proof_Assets' xlink:from='proof_NetAssets' order='31' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Things' xlink:title=''>
+     <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_NetAssets' xlink:label='proof_NetAssets' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_Liabilities' xlink:label='proof_Liabilities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:to='proof_Liabilities' xlink:from='proof_NetAssets' order='32' use='optional' />
+   </link:definitionLink>
+
+</link:linkbase>

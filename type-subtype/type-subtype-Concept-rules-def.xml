@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 11/1/2021 11:41:37 AM -->
+<!-- Public Domain Dedication: https://creativecommons.org/publicdomain/zero/1.0/ -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+   <link:roleRef xlink:type='simple' xlink:href='type-subtype-elr-roles.xsd#Concept' roleURI='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Concept'/>
+
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-arcroles.xsd#has-part' arcroleURI='https://github.com/seattlemethod/universal/cm/arcrole/has-part'/>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Concept' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Thing' xlink:label='cm_Thing' />
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Concept' xlink:label='cm_Concept' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:to='cm_Concept' xlink:from='cm_Thing' order='1' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Concept' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Concept' xlink:label='cm_Concept' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_ChangesInAccountingPolicy' xlink:label='proof_ChangesInAccountingPolicy' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:to='proof_ChangesInAccountingPolicy' xlink:from='cm_Concept' order='4' use='optional' />
+   </link:definitionLink>
+
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Concept' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Concept' xlink:label='cm_Concept' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_CorrectionOfAnError' xlink:label='proof_CorrectionOfAnError' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:to='proof_CorrectionOfAnError' xlink:from='cm_Concept' order='6' use='optional' />
+   </link:definitionLink>
+
+
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Concept' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Concept' xlink:label='cm_Concept' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_LiabilitiesAndEquity' xlink:label='proof_LiabilitiesAndEquity' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:to='proof_LiabilitiesAndEquity' xlink:from='cm_Concept' order='21' use='optional' />
+   </link:definitionLink>
+
+
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Concept' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Concept' xlink:label='cm_Concept' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_NetAssets' xlink:label='proof_NetAssets' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:to='proof_NetAssets' xlink:from='cm_Concept' order='24' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Concept' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Concept' xlink:label='cm_Concept' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_NetCashFlow' xlink:label='proof_NetCashFlow' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:to='proof_NetCashFlow' xlink:from='cm_Concept' order='25' use='optional' />
+   </link:definitionLink>
+
+
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/Concept' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Concept' xlink:label='cm_Concept' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_NonvestedFairValue' xlink:label='proof_NonvestedFairValue' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:to='proof_NonvestedFairValue' xlink:from='cm_Concept' order='32' use='optional' />
+   </link:definitionLink>
+
+
+</link:linkbase>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 11/1/2021 11:41:37 AM -->
+<!-- Public Domain Dedication: https://creativecommons.org/publicdomain/zero/1.0/ -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+   <link:roleRef xlink:type='simple' xlink:href='type-subtype-elr-roles.xsd#NetCashFlow' roleURI='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/NetCashFlow'/>
+
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-arcroles.xsd#has-part' arcroleURI='https://github.com/seattlemethod/universal/cm/arcrole/has-part'/>
+
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/NetCashFlow' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_NetCashFlow' xlink:label='proof_NetCashFlow' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_NetCashFlowOperatingActivities' xlink:label='proof_NetCashFlowOperatingActivities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:to='proof_NetCashFlowOperatingActivities' xlink:from='proof_NetCashFlow' order='2' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/NetCashFlow' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_NetCashFlow' xlink:label='proof_NetCashFlow' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_NetCashFlowInvestingActivities' xlink:label='proof_NetCashFlowInvestingActivities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:to='proof_NetCashFlowInvestingActivities' xlink:from='proof_NetCashFlow' order='3' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/type/elr/TypeOrClassRelations/role/NetCashFlow' xlink:title=''>
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_NetCashFlow' xlink:label='proof_NetCashFlow' />
+      <link:loc xlink:type='locator' xlink:href='../base-taxonomy/proof.xsd#proof_NetCashFlowFinancingActivities' xlink:label='proof_NetCashFlowFinancingActivities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:to='proof_NetCashFlowFinancingActivities' xlink:from='proof_NetCashFlow' order='4' use='optional' />
+   </link:definitionLink>
+
+</link:linkbase>
