@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 11/1/2021 8:59:21 AM -->
+<!-- Mini XBRL Financial Reporting Taxonomy Roles -->
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xmlns:generic='http://xbrl.org/2008/generic'
+  xmlns:proof-roles='https://github.com/seattlemethod/proof/roles'
+  targetNamespace='https://github.com/seattlemethod/proof/roles'
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+     <appinfo>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/proof/role/BalanceSheet" id="BalanceSheet">
+	<link:definition>01-Balance Sheet</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/proof/role/NetAssets" id="NetAssets">
+	<link:definition>02-Net Assets</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/proof/role/ComprehensiveIncome" id="ComprehensiveIncome">
+	<link:definition>03-Income Statement</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/proof/role/ComprehensiveIncome2" id="ComprehensiveIncome2">
+	<link:definition>04-Income Statement (Alternative)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/proof/role/ComprehensiveIncome3" id="ComprehensiveIncome3">
+	<link:definition>05-Comprehensive Income</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/proof/role/CashFlow" id="CashFlow">
+	<link:definition>06-Cash Flow</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/proof/role/PriorPeriodErrors" id="PriorPeriodErrors">
+	<link:definition>07-Prior Period Errors</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/proof/role/PriorPeriodErrors2" id="PriorPeriodErrors2">
+	<link:definition>08-Prior Period Errors (Alternative)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/proof/role/ChangesInEquity" id="ChangesInEquity">
+	<link:definition>09-Changes in Equity</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/proof/role/Policies" id="Policies">
+	<link:definition>10-Policies</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/proof/role/VarianceAnalysis" id="VarianceAnalysis">
+	<link:definition>11-Variance Analysis</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/proof/role/SegmentRevenues" id="SegmentRevenues">
+	<link:definition>12-Segment Revenues</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/proof/role/StockPlanActivity" id="StockPlanActivity">
+	<link:definition>13-Stock Plan Activity</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="https://github.com/seattlemethod/proof/role/FinancialHighlights" id="FinancialHighlights">
+	<link:definition>14-Financial Highlights</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+     </appinfo>
+  </annotation>
+<import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<import namespace='http://xbrl.org/2008/generic' schemaLocation='http://www.xbrl.org/2008/generic-link.xsd' />
+</schema>

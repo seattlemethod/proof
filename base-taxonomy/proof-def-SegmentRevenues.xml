@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 11/1/2021 8:59:21 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='proof-roles.xsd#SegmentRevenues' roleURI='https://github.com/seattlemethod/proof/role/SegmentRevenues' xlink:type='simple'/>
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' arcroleURI='http://xbrl.org/int/dim/arcrole/all' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' />
+<arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-arcroles.xsd#class-subClass' arcroleURI='https://github.com/seattlemethod/universal/cm/arcrole/class-subClass' />
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/SegmentRevenues">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_SegmentRevenuesLineItems" xlink:label="proof_SegmentRevenuesLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_Revenues" xlink:label="proof_Revenues"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="proof_SegmentRevenuesLineItems" xlink:to="proof_Revenues" order="55" use="optional"/>
+</link:definitionLink>
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/SegmentRevenues">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_SegmentRevenuesLineItems" xlink:label="proof_SegmentRevenuesLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_SegmentRevenuesHypercube" xlink:label="proof_SegmentRevenuesHypercube"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="proof_SegmentRevenuesLineItems" xlink:to="proof_SegmentRevenuesHypercube" order="56" use="optional" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xbrldt:contextElement="segment" xbrldt:closed="true"/>
+</link:definitionLink>
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/SegmentRevenues">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_SegmentRevenuesHypercube" xlink:label="proof_SegmentRevenuesHypercube"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_SegmentsAxis" xlink:label="proof_SegmentsAxis"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="proof_SegmentRevenuesHypercube" xlink:to="proof_SegmentsAxis" order="57" use="optional"/>
+</link:definitionLink>
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/SegmentRevenues">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_SegmentsAxis" xlink:label="proof_SegmentsAxis"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_AllSegmentsMember" xlink:label="proof_AllSegmentsMember"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:from="proof_SegmentsAxis" xlink:to="proof_AllSegmentsMember" order="58" use="optional"/>
+</link:definitionLink>
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/SegmentRevenues">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_SegmentsAxis" xlink:label="proof_SegmentsAxis"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_AllSegmentsMember" xlink:label="proof_AllSegmentsMember"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-default" xlink:from="proof_SegmentsAxis" xlink:to="proof_AllSegmentsMember" order="59" use="optional"/>
+</link:definitionLink>
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/SegmentRevenues">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_AllSegmentsMember" xlink:label="proof_AllSegmentsMember"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_SegmentAlphaMember" xlink:label="proof_SegmentAlphaMember"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="proof_AllSegmentsMember" xlink:to="proof_SegmentAlphaMember" order="60" use="optional"/>
+</link:definitionLink>
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/SegmentRevenues">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_AllSegmentsMember" xlink:label="proof_AllSegmentsMember"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_SegmentBravoMember" xlink:label="proof_SegmentBravoMember"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="proof_AllSegmentsMember" xlink:to="proof_SegmentBravoMember" order="61" use="optional"/>
+</link:definitionLink>
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/SegmentRevenues">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_AllSegmentsMember" xlink:label="proof_AllSegmentsMember"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_SegmentCharlieMember" xlink:label="proof_SegmentCharlieMember"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="proof_AllSegmentsMember" xlink:to="proof_SegmentCharlieMember" order="62" use="optional"/>
+</link:definitionLink>
+</link:linkbase>

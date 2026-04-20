@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 11/1/2021 8:59:21 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='proof-roles.xsd#ComprehensiveIncome2' roleURI='https://github.com/seattlemethod/proof/role/ComprehensiveIncome2' xlink:type='simple'/>
+<link:calculationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/ComprehensiveIncome2">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NetIncome" xlink:label="proof_NetIncome"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_IncomeFromNormalActivitiesOfEntity" xlink:label="proof_IncomeFromNormalActivitiesOfEntity"/>
+	<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="proof_NetIncome" xlink:to="proof_IncomeFromNormalActivitiesOfEntity" weight="1" order="1" use="optional"/>
+</link:calculationLink>
+<link:calculationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/ComprehensiveIncome2">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NetIncome" xlink:label="proof_NetIncome"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_IncomeFromPeripheralOrIncidentalTransactionsOfEntity" xlink:label="proof_IncomeFromPeripheralOrIncidentalTransactionsOfEntity"/>
+	<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="proof_NetIncome" xlink:to="proof_IncomeFromPeripheralOrIncidentalTransactionsOfEntity" weight="1" order="2" use="optional"/>
+</link:calculationLink>
+</link:linkbase>

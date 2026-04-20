@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 11/1/2021 8:59:21 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='proof-roles.xsd#CashFlow' roleURI='https://github.com/seattlemethod/proof/role/CashFlow' xlink:type='simple'/>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/CashFlow">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_CashFlowHypercube" xlink:label="proof_CashFlowHypercube"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_CashFlowLineItems" xlink:label="proof_CashFlowLineItems"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_CashFlowHypercube" xlink:to="proof_CashFlowLineItems" order="1" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/CashFlow">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_CashFlowLineItems" xlink:label="proof_CashFlowLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NetCashFlowRollUp" xlink:label="proof_NetCashFlowRollUp"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_CashFlowLineItems" xlink:to="proof_NetCashFlowRollUp" order="2" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/CashFlow">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NetCashFlowRollUp" xlink:label="proof_NetCashFlowRollUp"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NetCashFlowOperatingActivities" xlink:label="proof_NetCashFlowOperatingActivities"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_NetCashFlowRollUp" xlink:to="proof_NetCashFlowOperatingActivities" order="3" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/CashFlow">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NetCashFlowRollUp" xlink:label="proof_NetCashFlowRollUp"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NetCashFlowInvestingActivities" xlink:label="proof_NetCashFlowInvestingActivities"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_NetCashFlowRollUp" xlink:to="proof_NetCashFlowInvestingActivities" order="4" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/CashFlow">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NetCashFlowRollUp" xlink:label="proof_NetCashFlowRollUp"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NetCashFlowFinancingActivities" xlink:label="proof_NetCashFlowFinancingActivities"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_NetCashFlowRollUp" xlink:to="proof_NetCashFlowFinancingActivities" order="5" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/CashFlow">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NetCashFlowRollUp" xlink:label="proof_NetCashFlowRollUp"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NetCashFlow" xlink:label="proof_NetCashFlow"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_NetCashFlowRollUp" xlink:to="proof_NetCashFlow" order="6" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/CashFlow">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_CashFlowLineItems" xlink:label="proof_CashFlowLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_AssetsRollForward" xlink:label="proof_AssetsRollForward"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_CashFlowLineItems" xlink:to="proof_AssetsRollForward" order="7" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/CashFlow">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_AssetsRollForward" xlink:label="proof_AssetsRollForward"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_Assets" xlink:label="proof_Assets"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_AssetsRollForward" xlink:to="proof_Assets" preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel" order="8" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/CashFlow">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_AssetsRollForward" xlink:label="proof_AssetsRollForward"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NetCashFlow" xlink:label="proof_NetCashFlow"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_AssetsRollForward" xlink:to="proof_NetCashFlow" order="9" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/CashFlow">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_AssetsRollForward" xlink:label="proof_AssetsRollForward"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_Assets" xlink:label="proof_Assets"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_AssetsRollForward" xlink:to="proof_Assets" preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel" order="10" use="optional"/>
+</link:presentationLink>
+</link:linkbase>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 11/1/2021 8:59:21 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='proof-roles.xsd#ComprehensiveIncome3' roleURI='https://github.com/seattlemethod/proof/role/ComprehensiveIncome3' xlink:type='simple'/>
+<link:calculationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/ComprehensiveIncome3">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ComprehensiveIncome" xlink:label="proof_ComprehensiveIncome"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NetIncome" xlink:label="proof_NetIncome"/>
+	<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="proof_ComprehensiveIncome" xlink:to="proof_NetIncome" weight="1" order="16" use="optional"/>
+</link:calculationLink>
+<link:calculationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/ComprehensiveIncome3">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ComprehensiveIncome" xlink:label="proof_ComprehensiveIncome"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_OtherComprehensiveIncome" xlink:label="proof_OtherComprehensiveIncome"/>
+	<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="proof_ComprehensiveIncome" xlink:to="proof_OtherComprehensiveIncome" weight="1" order="17" use="optional"/>
+</link:calculationLink>
+</link:linkbase>

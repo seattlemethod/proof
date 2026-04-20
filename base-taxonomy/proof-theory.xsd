@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 2025-10-27 -->
+<!-- Theory Schema -->
+<?xbrlsite name='CreatedBy' value='Charles Hoffman, CPA'?>
+<?xbrlsite name='CreationDateTime' value='12/30/2025 10:07:17 AM'?>
+<?xbrlsite name='ReportingSchemeTitle' value='PROOF Financial Reporting Scheme'?>
+<?xbrlsite name='Title' value='PROOF Financial Reporting Scheme'?>
+<?xbrlsite name='ReportingStyles' value='../fac/reporting-styles-cm-ref.xml'?>
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+
+  xmlns:topics='https://github.com/seattlemethod/proof/topics'
+  xmlns:disclosures='https://github.com/seattlemethod/disclosures'
+  xmlns:dm='https://github.com/seattlemethod/dm'
+  xmlns:style374='https://github.com/seattlemethod/fac/reportingStyle/style374'
+
+
+
+  xmlns:proof-entry='https://github.com/seattlemethod/proof/entry'
+  xmlns:proof-theory='http://www.xbrlsite.com/seattlemethod/proof/theory'
+  targetNamespace='http://www.xbrlsite.com/seattlemethod/proof/theory'
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+    <appinfo>
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='../reporting-checklist/reporting-checklist-BSC-IS01-CF1-rules-def.xml' xlink:title='Reporting Checklist' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='../type-subtype/types-BSC-IS01-CF1-rules-def.xml' xlink:title='Types and Subtypes' />
+
+
+
+    </appinfo>
+  </annotation>
+<import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+
+<import namespace='https://github.com/seattlemethod/proof/entry' schemaLocation='proof-entryPoint.xsd' />
+
+<import namespace='https://github.com/seattlemethod/proof/topics' schemaLocation='../disclosures-topics/topics.xsd' />
+<import namespace='https://github.com/seattlemethod/disclosures' schemaLocation='../disclosures-topics/disclosures.xsd' />
+<import namespace='https://github.com/seattlemethod/dm' schemaLocation='../disclosure-mechanics/disclosure-mechanics.xsd' />
+<import namespace='https://github.com/seattlemethod/fac/reportingStyle/style374' schemaLocation='../fac/reporting-styles/BSC-IS01-CF1_schema.xsd' />
+
+
+
+</schema>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 11/1/2021 8:59:21 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='proof-roles.xsd#Policies' roleURI='https://github.com/seattlemethod/proof/role/Policies' xlink:type='simple'/>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/Policies">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_PoliciesHypercube" xlink:label="proof_PoliciesHypercube"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_PoliciesLineItems" xlink:label="proof_PoliciesLineItems"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_PoliciesHypercube" xlink:to="proof_PoliciesLineItems" order="41" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/Policies">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_PoliciesLineItems" xlink:label="proof_PoliciesLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_BasisOfReportingTextBlock" xlink:label="proof_BasisOfReportingTextBlock"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_PoliciesLineItems" xlink:to="proof_BasisOfReportingTextBlock" order="42" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/Policies">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_PoliciesLineItems" xlink:label="proof_PoliciesLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NatureOfOperationsTextBlock" xlink:label="proof_NatureOfOperationsTextBlock"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_PoliciesLineItems" xlink:to="proof_NatureOfOperationsTextBlock" order="43" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/Policies">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_PoliciesLineItems" xlink:label="proof_PoliciesLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_RevenueRecognitionPolicyTextBlock" xlink:label="proof_RevenueRecognitionPolicyTextBlock"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_PoliciesLineItems" xlink:to="proof_RevenueRecognitionPolicyTextBlock" order="44" use="optional"/>
+</link:presentationLink>
+</link:linkbase>

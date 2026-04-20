@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 11/1/2021 8:59:21 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='proof-roles.xsd#PriorPeriodErrors2' roleURI='https://github.com/seattlemethod/proof/role/PriorPeriodErrors2' xlink:type='simple'/>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/PriorPeriodErrors2">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_PriorPeriodErrorsHypercube" xlink:label="proof_PriorPeriodErrorsHypercube"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_RestatementAxis" xlink:label="proof_RestatementAxis"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_PriorPeriodErrorsHypercube" xlink:to="proof_RestatementAxis" order="1" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/PriorPeriodErrors2">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_RestatementAxis" xlink:label="proof_RestatementAxis"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_RestatedMember" xlink:label="proof_RestatedMember"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_RestatementAxis" xlink:to="proof_RestatedMember" order="2" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/PriorPeriodErrors2">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_RestatedMember" xlink:label="proof_RestatedMember"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_PreviouslyStatedMember" xlink:label="proof_PreviouslyStatedMember"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_RestatedMember" xlink:to="proof_PreviouslyStatedMember" order="3" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/PriorPeriodErrors2">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_RestatedMember" xlink:label="proof_RestatedMember"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ChangesInAccountingPolicyMember" xlink:label="proof_ChangesInAccountingPolicyMember"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_RestatedMember" xlink:to="proof_ChangesInAccountingPolicyMember" order="4" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/PriorPeriodErrors2">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_RestatedMember" xlink:label="proof_RestatedMember"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_CorrectionsOfAccountingErrorsMember" xlink:label="proof_CorrectionsOfAccountingErrorsMember"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_RestatedMember" xlink:to="proof_CorrectionsOfAccountingErrorsMember" order="5" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/PriorPeriodErrors2">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_PriorPeriodErrorsHypercube" xlink:label="proof_PriorPeriodErrorsHypercube"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_PriorPeriodErrorsLineItems" xlink:label="proof_PriorPeriodErrorsLineItems"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_PriorPeriodErrorsHypercube" xlink:to="proof_PriorPeriodErrorsLineItems" order="6" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/PriorPeriodErrors2">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_PriorPeriodErrorsLineItems" xlink:label="proof_PriorPeriodErrorsLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_PriorPeriodErrorsAdjustment" xlink:label="proof_PriorPeriodErrorsAdjustment"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_PriorPeriodErrorsLineItems" xlink:to="proof_PriorPeriodErrorsAdjustment" order="7" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/PriorPeriodErrors2">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_PriorPeriodErrorsAdjustment" xlink:label="proof_PriorPeriodErrorsAdjustment"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_Equity" xlink:label="proof_Equity"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_PriorPeriodErrorsAdjustment" xlink:to="proof_Equity" order="8" use="optional"/>
+</link:presentationLink>
+</link:linkbase>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 11/1/2021 8:59:21 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='proof-roles.xsd#VarianceAnalysis' roleURI='https://github.com/seattlemethod/proof/role/VarianceAnalysis' xlink:type='simple'/>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/VarianceAnalysis">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_VarianceAnalysisHypercube" xlink:label="proof_VarianceAnalysisHypercube"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ScenarioAxis" xlink:label="proof_ScenarioAxis"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_VarianceAnalysisHypercube" xlink:to="proof_ScenarioAxis" order="21" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/VarianceAnalysis">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ScenarioAxis" xlink:label="proof_ScenarioAxis"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ActualMember" xlink:label="proof_ActualMember"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_ScenarioAxis" xlink:to="proof_ActualMember" order="22" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/VarianceAnalysis">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ActualMember" xlink:label="proof_ActualMember"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_VarianceMember" xlink:label="proof_VarianceMember"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_ActualMember" xlink:to="proof_VarianceMember" order="23" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/VarianceAnalysis">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ActualMember" xlink:label="proof_ActualMember"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_BudgetedMember" xlink:label="proof_BudgetedMember"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_ActualMember" xlink:to="proof_BudgetedMember" order="24" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/VarianceAnalysis">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_VarianceAnalysisHypercube" xlink:label="proof_VarianceAnalysisHypercube"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_VarianceAnalysisLineItems" xlink:label="proof_VarianceAnalysisLineItems"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_VarianceAnalysisHypercube" xlink:to="proof_VarianceAnalysisLineItems" order="25" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/VarianceAnalysis">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_VarianceAnalysisLineItems" xlink:label="proof_VarianceAnalysisLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_VarianceAnalysisRollUp" xlink:label="proof_VarianceAnalysisRollUp"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_VarianceAnalysisLineItems" xlink:to="proof_VarianceAnalysisRollUp" order="26" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/VarianceAnalysis">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_VarianceAnalysisRollUp" xlink:label="proof_VarianceAnalysisRollUp"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_Revenues" xlink:label="proof_Revenues"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_VarianceAnalysisRollUp" xlink:to="proof_Revenues" order="27" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/VarianceAnalysis">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_VarianceAnalysisRollUp" xlink:label="proof_VarianceAnalysisRollUp"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_Expenses" xlink:label="proof_Expenses"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_VarianceAnalysisRollUp" xlink:to="proof_Expenses" preferredLabel="http://www.xbrl.org/2009/role/negatedLabel" order="28" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/VarianceAnalysis">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_VarianceAnalysisRollUp" xlink:label="proof_VarianceAnalysisRollUp"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_Gains" xlink:label="proof_Gains"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_VarianceAnalysisRollUp" xlink:to="proof_Gains" order="29" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/VarianceAnalysis">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_VarianceAnalysisRollUp" xlink:label="proof_VarianceAnalysisRollUp"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_Losses" xlink:label="proof_Losses"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_VarianceAnalysisRollUp" xlink:to="proof_Losses" preferredLabel="http://www.xbrl.org/2009/role/negatedLabel" order="30" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/VarianceAnalysis">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_VarianceAnalysisRollUp" xlink:label="proof_VarianceAnalysisRollUp"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NetIncome" xlink:label="proof_NetIncome"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_VarianceAnalysisRollUp" xlink:to="proof_NetIncome" order="31" use="optional"/>
+</link:presentationLink>
+</link:linkbase>

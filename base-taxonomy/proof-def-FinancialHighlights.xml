@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 11/1/2021 8:59:21 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='proof-roles.xsd#FinancialHighlights' roleURI='https://github.com/seattlemethod/proof/role/FinancialHighlights' xlink:type='simple'/>
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' arcroleURI='http://xbrl.org/int/dim/arcrole/all' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' />
+<arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-arcroles.xsd#class-subClass' arcroleURI='https://github.com/seattlemethod/universal/cm/arcrole/class-subClass' />
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/FinancialHighlights">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_FinancialHighlightsLineItems" xlink:label="proof_FinancialHighlightsLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_Revenues" xlink:label="proof_Revenues"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="proof_FinancialHighlightsLineItems" xlink:to="proof_Revenues" order="27" use="optional"/>
+</link:definitionLink>
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/FinancialHighlights">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_FinancialHighlightsLineItems" xlink:label="proof_FinancialHighlightsLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ComprehensiveIncome" xlink:label="proof_ComprehensiveIncome"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="proof_FinancialHighlightsLineItems" xlink:to="proof_ComprehensiveIncome" order="28" use="optional"/>
+</link:definitionLink>
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/FinancialHighlights">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_FinancialHighlightsLineItems" xlink:label="proof_FinancialHighlightsLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_DistributionsToOwners" xlink:label="proof_DistributionsToOwners"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="proof_FinancialHighlightsLineItems" xlink:to="proof_DistributionsToOwners" order="29" use="optional"/>
+</link:definitionLink>
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/FinancialHighlights">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_FinancialHighlightsLineItems" xlink:label="proof_FinancialHighlightsLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_FinancialHighlightsHypercube" xlink:label="proof_FinancialHighlightsHypercube"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="proof_FinancialHighlightsLineItems" xlink:to="proof_FinancialHighlightsHypercube" order="30" use="optional" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xbrldt:contextElement="segment" xbrldt:closed="true"/>
+</link:definitionLink>
+</link:linkbase>

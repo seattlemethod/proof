@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 11/1/2021 8:59:21 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='proof-roles.xsd#ComprehensiveIncome2' roleURI='https://github.com/seattlemethod/proof/role/ComprehensiveIncome2' xlink:type='simple'/>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/ComprehensiveIncome2">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ComprehensiveIncomeStatementHypercube" xlink:label="proof_ComprehensiveIncomeStatementHypercube"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ComprehensiveIncomeStatementLineItems" xlink:label="proof_ComprehensiveIncomeStatementLineItems"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_ComprehensiveIncomeStatementHypercube" xlink:to="proof_ComprehensiveIncomeStatementLineItems" order="1" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/ComprehensiveIncome2">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ComprehensiveIncomeStatementLineItems" xlink:label="proof_ComprehensiveIncomeStatementLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ComprehensiveIncomeRollUp" xlink:label="proof_ComprehensiveIncomeRollUp"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_ComprehensiveIncomeStatementLineItems" xlink:to="proof_ComprehensiveIncomeRollUp" order="2" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/ComprehensiveIncome2">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ComprehensiveIncomeRollUp" xlink:label="proof_ComprehensiveIncomeRollUp"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_IncomeFromNormalActivitiesOfEntity" xlink:label="proof_IncomeFromNormalActivitiesOfEntity"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_ComprehensiveIncomeRollUp" xlink:to="proof_IncomeFromNormalActivitiesOfEntity" order="3" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/ComprehensiveIncome2">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ComprehensiveIncomeRollUp" xlink:label="proof_ComprehensiveIncomeRollUp"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_IncomeFromPeripheralOrIncidentalTransactionsOfEntity" xlink:label="proof_IncomeFromPeripheralOrIncidentalTransactionsOfEntity"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_ComprehensiveIncomeRollUp" xlink:to="proof_IncomeFromPeripheralOrIncidentalTransactionsOfEntity" order="4" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/ComprehensiveIncome2">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ComprehensiveIncomeRollUp" xlink:label="proof_ComprehensiveIncomeRollUp"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NetIncome" xlink:label="proof_NetIncome"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_ComprehensiveIncomeRollUp" xlink:to="proof_NetIncome" order="5" use="optional"/>
+</link:presentationLink>
+</link:linkbase>

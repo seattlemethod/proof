@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 11/1/2021 8:59:21 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='proof-roles.xsd#CashFlow' roleURI='https://github.com/seattlemethod/proof/role/CashFlow' xlink:type='simple'/>
+<link:calculationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/CashFlow">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NetCashFlow" xlink:label="proof_NetCashFlow"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NetCashFlowOperatingActivities" xlink:label="proof_NetCashFlowOperatingActivities"/>
+	<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="proof_NetCashFlow" xlink:to="proof_NetCashFlowOperatingActivities" weight="1" order="1" use="optional"/>
+</link:calculationLink>
+<link:calculationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/CashFlow">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NetCashFlow" xlink:label="proof_NetCashFlow"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NetCashFlowInvestingActivities" xlink:label="proof_NetCashFlowInvestingActivities"/>
+	<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="proof_NetCashFlow" xlink:to="proof_NetCashFlowInvestingActivities" weight="1" order="2" use="optional"/>
+</link:calculationLink>
+<link:calculationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/CashFlow">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NetCashFlow" xlink:label="proof_NetCashFlow"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NetCashFlowFinancingActivities" xlink:label="proof_NetCashFlowFinancingActivities"/>
+	<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="proof_NetCashFlow" xlink:to="proof_NetCashFlowFinancingActivities" weight="1" order="3" use="optional"/>
+</link:calculationLink>
+</link:linkbase>

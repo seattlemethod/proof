@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 11/1/2021 8:59:21 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='proof-roles.xsd#ChangesInEquity' roleURI='https://github.com/seattlemethod/proof/role/ChangesInEquity' xlink:type='simple'/>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/ChangesInEquity">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ChangesInEquityHypercube" xlink:label="proof_ChangesInEquityHypercube"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ChangesInEquityLineItems" xlink:label="proof_ChangesInEquityLineItems"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_ChangesInEquityHypercube" xlink:to="proof_ChangesInEquityLineItems" order="51" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/ChangesInEquity">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ChangesInEquityLineItems" xlink:label="proof_ChangesInEquityLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ChangesInEquityRollForward" xlink:label="proof_ChangesInEquityRollForward"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_ChangesInEquityLineItems" xlink:to="proof_ChangesInEquityRollForward" order="52" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/ChangesInEquity">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ChangesInEquityRollForward" xlink:label="proof_ChangesInEquityRollForward"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_Equity" xlink:label="proof_Equity"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_ChangesInEquityRollForward" xlink:to="proof_Equity" preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel" order="53" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/ChangesInEquity">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ChangesInEquityRollForward" xlink:label="proof_ChangesInEquityRollForward"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ComprehensiveIncome" xlink:label="proof_ComprehensiveIncome"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_ChangesInEquityRollForward" xlink:to="proof_ComprehensiveIncome" order="54" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/ChangesInEquity">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ChangesInEquityRollForward" xlink:label="proof_ChangesInEquityRollForward"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_InvestmentsByOwners" xlink:label="proof_InvestmentsByOwners"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_ChangesInEquityRollForward" xlink:to="proof_InvestmentsByOwners" order="55" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/ChangesInEquity">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ChangesInEquityRollForward" xlink:label="proof_ChangesInEquityRollForward"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_DistributionsToOwners" xlink:label="proof_DistributionsToOwners"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_ChangesInEquityRollForward" xlink:to="proof_DistributionsToOwners" preferredLabel="http://www.xbrl.org/2009/role/negatedLabel" order="56" use="optional"/>
+</link:presentationLink>
+<link:presentationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/ChangesInEquity">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ChangesInEquityRollForward" xlink:label="proof_ChangesInEquityRollForward"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_Equity" xlink:label="proof_Equity"/>
+	<link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="proof_ChangesInEquityRollForward" xlink:to="proof_Equity" preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel" order="57" use="optional"/>
+</link:presentationLink>
+</link:linkbase>

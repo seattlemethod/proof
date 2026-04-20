@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 11/1/2021 8:59:21 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='proof-roles.xsd#PriorPeriodErrors' roleURI='https://github.com/seattlemethod/proof/role/PriorPeriodErrors' xlink:type='simple'/>
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' arcroleURI='http://xbrl.org/int/dim/arcrole/all' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' />
+<arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-arcroles.xsd#class-subClass' arcroleURI='https://github.com/seattlemethod/universal/cm/arcrole/class-subClass' />
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/PriorPeriodErrors">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_PriorPeriodErrorsLineItems" xlink:label="proof_PriorPeriodErrorsLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_Equity" xlink:label="proof_Equity"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="proof_PriorPeriodErrorsLineItems" xlink:to="proof_Equity" order="1" use="optional"/>
+</link:definitionLink>
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/PriorPeriodErrors">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_PriorPeriodErrorsLineItems" xlink:label="proof_PriorPeriodErrorsLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ChangesInAccountingPolicy" xlink:label="proof_ChangesInAccountingPolicy"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="proof_PriorPeriodErrorsLineItems" xlink:to="proof_ChangesInAccountingPolicy" order="2" use="optional"/>
+</link:definitionLink>
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/PriorPeriodErrors">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_PriorPeriodErrorsLineItems" xlink:label="proof_PriorPeriodErrorsLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_CorrectionOfAnError" xlink:label="proof_CorrectionOfAnError"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="proof_PriorPeriodErrorsLineItems" xlink:to="proof_CorrectionOfAnError" order="3" use="optional"/>
+</link:definitionLink>
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/PriorPeriodErrors">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_PriorPeriodErrorsLineItems" xlink:label="proof_PriorPeriodErrorsLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_PriorPeriodErrorsHypercube" xlink:label="proof_PriorPeriodErrorsHypercube"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="proof_PriorPeriodErrorsLineItems" xlink:to="proof_PriorPeriodErrorsHypercube" order="4" use="optional" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xbrldt:contextElement="segment" xbrldt:closed="true"/>
+</link:definitionLink>
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/PriorPeriodErrors">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_PriorPeriodErrorsHypercube" xlink:label="proof_PriorPeriodErrorsHypercube"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ReportDateAxis" xlink:label="proof_ReportDateAxis"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="proof_PriorPeriodErrorsHypercube" xlink:to="proof_ReportDateAxis" order="5" use="optional"/>
+</link:definitionLink>
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/PriorPeriodErrors">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ReportDateAxis" xlink:label="proof_ReportDateAxis"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_CurrentReportMember" xlink:label="proof_CurrentReportMember"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:from="proof_ReportDateAxis" xlink:to="proof_CurrentReportMember" order="6" use="optional"/>
+</link:definitionLink>
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/PriorPeriodErrors">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_ReportDateAxis" xlink:label="proof_ReportDateAxis"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_CurrentReportMember" xlink:label="proof_CurrentReportMember"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-default" xlink:from="proof_ReportDateAxis" xlink:to="proof_CurrentReportMember" order="7" use="optional"/>
+</link:definitionLink>
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/PriorPeriodErrors">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_CurrentReportMember" xlink:label="proof_CurrentReportMember"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_PriorReportMember" xlink:label="proof_PriorReportMember"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="proof_CurrentReportMember" xlink:to="proof_PriorReportMember" order="8" use="optional"/>
+</link:definitionLink>
+</link:linkbase>

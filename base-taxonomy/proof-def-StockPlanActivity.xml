@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 11/1/2021 8:59:21 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='proof-roles.xsd#StockPlanActivity' roleURI='https://github.com/seattlemethod/proof/role/StockPlanActivity' xlink:type='simple'/>
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' arcroleURI='http://xbrl.org/int/dim/arcrole/all' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' />
+<arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-arcroles.xsd#class-subClass' arcroleURI='https://github.com/seattlemethod/universal/cm/arcrole/class-subClass' />
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/StockPlanActivity">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_WeightedAverageGrantDateFairValueLineItems" xlink:label="proof_WeightedAverageGrantDateFairValueLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NonvestedFairValue" xlink:label="proof_NonvestedFairValue"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="proof_WeightedAverageGrantDateFairValueLineItems" xlink:to="proof_NonvestedFairValue" order="20" use="optional"/>
+</link:definitionLink>
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/StockPlanActivity">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_WeightedAverageGrantDateFairValueLineItems" xlink:label="proof_WeightedAverageGrantDateFairValueLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_Granted" xlink:label="proof_Granted"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="proof_WeightedAverageGrantDateFairValueLineItems" xlink:to="proof_Granted" order="21" use="optional"/>
+</link:definitionLink>
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/StockPlanActivity">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_WeightedAverageGrantDateFairValueLineItems" xlink:label="proof_WeightedAverageGrantDateFairValueLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_Vested" xlink:label="proof_Vested"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="proof_WeightedAverageGrantDateFairValueLineItems" xlink:to="proof_Vested" order="22" use="optional"/>
+</link:definitionLink>
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/StockPlanActivity">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_WeightedAverageGrantDateFairValueLineItems" xlink:label="proof_WeightedAverageGrantDateFairValueLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_Forfeited" xlink:label="proof_Forfeited"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="proof_WeightedAverageGrantDateFairValueLineItems" xlink:to="proof_Forfeited" order="23" use="optional"/>
+</link:definitionLink>
+<link:definitionLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/StockPlanActivity">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_WeightedAverageGrantDateFairValueLineItems" xlink:label="proof_WeightedAverageGrantDateFairValueLineItems"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_WeightedAverageGrantDateFairValueHypercube" xlink:label="proof_WeightedAverageGrantDateFairValueHypercube"/>
+	<link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="proof_WeightedAverageGrantDateFairValueLineItems" xlink:to="proof_WeightedAverageGrantDateFairValueHypercube" order="24" use="optional" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xbrldt:contextElement="segment" xbrldt:closed="true"/>
+</link:definitionLink>
+</link:linkbase>

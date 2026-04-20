@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 11/1/2021 8:59:21 AM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='proof-roles.xsd#BalanceSheet' roleURI='https://github.com/seattlemethod/proof/role/BalanceSheet' xlink:type='simple'/>
+<link:calculationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/BalanceSheet">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_Assets" xlink:label="proof_Assets"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_CurrentAssets" xlink:label="proof_CurrentAssets"/>
+	<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="proof_Assets" xlink:to="proof_CurrentAssets" weight="1" order="1" use="optional"/>
+</link:calculationLink>
+<link:calculationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/BalanceSheet">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_Assets" xlink:label="proof_Assets"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NoncurrentAssets" xlink:label="proof_NoncurrentAssets"/>
+	<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="proof_Assets" xlink:to="proof_NoncurrentAssets" weight="1" order="2" use="optional"/>
+</link:calculationLink>
+<link:calculationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/BalanceSheet">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_LiabilitiesAndEquity" xlink:label="proof_LiabilitiesAndEquity"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_Liabilities" xlink:label="proof_Liabilities"/>
+	<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="proof_LiabilitiesAndEquity" xlink:to="proof_Liabilities" weight="1" order="3" use="optional"/>
+</link:calculationLink>
+<link:calculationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/BalanceSheet">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_LiabilitiesAndEquity" xlink:label="proof_LiabilitiesAndEquity"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_Equity" xlink:label="proof_Equity"/>
+	<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="proof_LiabilitiesAndEquity" xlink:to="proof_Equity" weight="1" order="4" use="optional"/>
+</link:calculationLink>
+<link:calculationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/BalanceSheet">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_Liabilities" xlink:label="proof_Liabilities"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_CurrentLiabilities" xlink:label="proof_CurrentLiabilities"/>
+	<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="proof_Liabilities" xlink:to="proof_CurrentLiabilities" weight="1" order="5" use="optional"/>
+</link:calculationLink>
+<link:calculationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/BalanceSheet">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_Liabilities" xlink:label="proof_Liabilities"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_NoncurrentLiabilities" xlink:label="proof_NoncurrentLiabilities"/>
+	<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="proof_Liabilities" xlink:to="proof_NoncurrentLiabilities" weight="1" order="6" use="optional"/>
+</link:calculationLink>
+<link:calculationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/BalanceSheet">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_Equity" xlink:label="proof_Equity"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_EquityAttributableToControllingInterests" xlink:label="proof_EquityAttributableToControllingInterests"/>
+	<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="proof_Equity" xlink:to="proof_EquityAttributableToControllingInterests" weight="1" order="7" use="optional"/>
+</link:calculationLink>
+<link:calculationLink xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/proof/role/BalanceSheet">
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_Equity" xlink:label="proof_Equity"/>
+	<link:loc xlink:type="locator" xlink:href="proof.xsd#proof_EquityAttributableToNoncontrollingInterests" xlink:label="proof_EquityAttributableToNoncontrollingInterests"/>
+	<link:calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="proof_Equity" xlink:to="proof_EquityAttributableToNoncontrollingInterests" weight="1" order="8" use="optional"/>
+</link:calculationLink>
+</link:linkbase>

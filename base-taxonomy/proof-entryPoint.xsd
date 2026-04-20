@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 11/1/2021 8:59:26 AM -->
+<!-- Entry Point Schema -->
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xmlns:proof-entry='https://github.com/seattlemethod/proof/entry'
+  targetNamespace='https://github.com/seattlemethod/proof/entry'
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+    <appinfo>
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-pre-BalanceSheet.xml' xlink:title='01-Balance Sheet' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-pre-NetAssets.xml' xlink:title='02-Net Assets' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-pre-ComprehensiveIncome.xml' xlink:title='03-Income Statement' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-pre-ComprehensiveIncome2.xml' xlink:title='04-Income Statement (Alternative)' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-pre-ComprehensiveIncome3.xml' xlink:title='05-Comprehensive Income' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-pre-CashFlow.xml' xlink:title='06-Cash Flow' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-pre-PriorPeriodErrors.xml' xlink:title='07-Prior Period Errors' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-pre-PriorPeriodErrors2.xml' xlink:title='08-Prior Period Errors (Alternative)' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-pre-ChangesInEquity.xml' xlink:title='09-Changes in Equity' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-pre-Policies.xml' xlink:title='10-Policies' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-pre-VarianceAnalysis.xml' xlink:title='11-Variance Analysis' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-pre-SegmentRevenues.xml' xlink:title='12-Segment Revenues' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-pre-StockPlanActivity.xml' xlink:title='13-Stock Plan Activity' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-pre-FinancialHighlights.xml' xlink:title='14-Financial Highlights' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-cal-BalanceSheet.xml' xlink:title='01-Balance Sheet' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-cal-NetAssets.xml' xlink:title='02-Net Assets' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-cal-ComprehensiveIncome.xml' xlink:title='03-Income Statement' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-cal-ComprehensiveIncome2.xml' xlink:title='04-Income Statement (Alternative)' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-cal-ComprehensiveIncome3.xml' xlink:title='05-Comprehensive Income' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-cal-CashFlow.xml' xlink:title='06-Cash Flow' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-cal-VarianceAnalysis.xml' xlink:title='11-Variance Analysis' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-def-BalanceSheet.xml' xlink:title='01-Balance Sheet' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-def-NetAssets.xml' xlink:title='02-Net Assets' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-def-ComprehensiveIncome.xml' xlink:title='03-Income Statement' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-def-ComprehensiveIncome2.xml' xlink:title='04-Income Statement (Alternative)' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-def-ComprehensiveIncome3.xml' xlink:title='05-Comprehensive Income' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-def-CashFlow.xml' xlink:title='06-Cash Flow' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-def-PriorPeriodErrors.xml' xlink:title='07-Prior Period Errors' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-def-PriorPeriodErrors2.xml' xlink:title='08-Prior Period Errors (Alternative)' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-def-ChangesInEquity.xml' xlink:title='09-Changes in Equity' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-def-Policies.xml' xlink:title='10-Policies' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-def-VarianceAnalysis.xml' xlink:title='11-Variance Analysis' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-def-SegmentRevenues.xml' xlink:title='12-Segment Revenues' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-def-StockPlanActivity.xml' xlink:title='13-Stock Plan Activity' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-def-FinancialHighlights.xml' xlink:title='14-Financial Highlights' />
+
+
+
+      <link:linkbaseRef xlink:type='simple' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-for-BalanceSheet.xml' xlink:title='XBRL Formulas' />
+      <link:linkbaseRef xlink:type='simple' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-for-CashFlow.xml' xlink:title='XBRL Formulas' />
+      <link:linkbaseRef xlink:type='simple' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-for-ChangesInEquity.xml' xlink:title='XBRL Formulas' />
+      <link:linkbaseRef xlink:type='simple' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-for-NetAssets.xml' xlink:title='XBRL Formulas' />
+      <link:linkbaseRef xlink:type='simple' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-for-PriorPeriodErrors.xml' xlink:title='XBRL Formulas' />
+      <link:linkbaseRef xlink:type='simple' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-for-PriorPeriodErrors2.xml' xlink:title='XBRL Formulas' />
+      <link:linkbaseRef xlink:type='simple' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-for-SegmentRevenues.xml' xlink:title='XBRL Formulas' />
+      <link:linkbaseRef xlink:type='simple' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-for-VarianceAnalysis.xml' xlink:title='XBRL Formulas' />
+      <link:linkbaseRef xlink:type='simple' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-for-Nonstandard.xml' xlink:title='XBRL Formulas' />
+
+
+
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/labelLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-lab.xml' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/referenceLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='proof-ref.xml' />
+    </appinfo>
+  </annotation>
+<import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+
+<import namespace='https://github.com/seattlemethod/proof' schemaLocation='proof.xsd' />
+
+</schema>
