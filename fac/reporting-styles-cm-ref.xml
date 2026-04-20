@@ -18,11 +18,9 @@
     <reference xlink:type='resource' xlink:label='cm_ReportingStyle_lbl' xlink:role='https://github.com/seattlemethod/universal/cm/roles/reportingStyle'>
         <rpart:Description>(BSC-IS01-CF1) Balance sheet CLASSIFIED, Income Statement, Cash Flow Statement</rpart:Description>
         <rpart:ReportingStyleCode>BSC-IS01-CF1</rpart:ReportingStyleCode>
-        <rpart:ReportingStyleLink>https://github.com/seattlemethod/platinum/proof/fac/reporting-styles/BSC-IS01-CF1_schema.xsd</rpart:ReportingStyleLink>
-        <rpart:ReportingChecklistLink>https://github.com/seattlemethod/platinum/proof/reporting-checklist/reporting-checklist-BSC-IS01-CF1-rules-def.xml</rpart:ReportingChecklistLink>
-        <rpart:TypeSubtypeRulesLink>https://github.com/seattlemethod/platinum/proof/type-subtype/types-BSC-IS01-CF1-rules-def.xml</rpart:TypeSubtypeRulesLink>
-        <rpart:TemplatesLink>https://github.com/seattlemethod/platinum/proof/templates/disclosures-templates-ref.xml</rpart:TemplatesLink>
-        <rpart:ExemplarsLink>https://github.com/seattlemethod/platinum/proof/exemplars/disclosures-exemplarsList-ref.xml</rpart:ExemplarsLink>
+        <rpart:ReportingStyleLink>https://raw.githubusercontent.com/seattlemethod/proof/refs/heads/main/fac/reporting-styles/BSC-IS01-CF1_schema.xsd</rpart:ReportingStyleLink>
+        <rpart:ReportingChecklistLink>https://raw.githubusercontent.com/seattlemethod/proof/refs/heads/main/reporting-checklist/reporting-checklist-BSC-IS01-CF1-rules-def.xml</rpart:ReportingChecklistLink>
+        <rpart:TypeSubtypeRulesLink>https://raw.githubusercontent.com/seattlemethod/proof/refs/heads/main/type-subtype/types-BSC-IS01-CF1-rules-def.xml</rpart:TypeSubtypeRulesLink>
     </reference>
   </referenceLink>
 
@@ -32,11 +30,9 @@
     <reference xlink:type='resource' xlink:label='cm_ReportingStyle_lbl' xlink:role='https://github.com/seattlemethod/universal/cm/roles/reportingStyle'>
         <rpart:Description>(BSC-IS02-CF1) Balance sheet CLASSIFIED, Income Statement Alternative, Cash Flow Statement</rpart:Description>
         <rpart:ReportingStyleCode>BSC-IS02-CF1</rpart:ReportingStyleCode>
-        <rpart:ReportingStyleLink>https://github.com/seattlemethod/platinum/proof/fac/reporting-styles/BSC-IS02-CF1_schema.xsd</rpart:ReportingStyleLink>
-        <rpart:ReportingChecklistLink>https://github.com/seattlemethod/platinum/proof/reporting-checklist/reporting-checklist-BSC-IS02-CF1-rules-def.xml</rpart:ReportingChecklistLink>
-        <rpart:TypeSubtypeRulesLink>https://github.com/seattlemethod/platinum/proof/type-subtype/types-BSC-IS02-CF1-rules-def.xml</rpart:TypeSubtypeRulesLink>
-        <rpart:TemplatesLink>https://github.com/seattlemethod/platinum/proof/templates/disclosures-templates-ref.xml</rpart:TemplatesLink>
-        <rpart:ExemplarsLink>https://github.com/seattlemethod/platinum/proof/exemplars/disclosures-exemplarsList-ref.xml</rpart:ExemplarsLink>
+        <rpart:ReportingStyleLink>https://raw.githubusercontent.com/seattlemethod/proof/refs/heads/main/fac/reporting-styles/BSC-IS02-CF1_schema.xsd</rpart:ReportingStyleLink>
+        <rpart:ReportingChecklistLink>https://raw.githubusercontent.com/seattlemethod/proof/refs/heads/main/reporting-checklist/reporting-checklist-BSC-IS02-CF1-rules-def.xml</rpart:ReportingChecklistLink>
+        <rpart:TypeSubtypeRulesLink>https://raw.githubusercontent.com/seattlemethod/proof/refs/heads/main/type-subtype/types-BSC-IS02-CF1-rules-def.xml</rpart:TypeSubtypeRulesLink>
     </reference>
   </referenceLink>
 
@@ -47,11 +43,9 @@
     <reference xlink:type='resource' xlink:label='cm_ReportingStyle_lbl' xlink:role='https://github.com/seattlemethod/universal/cm/roles/reportingStyle'>
         <rpart:Description>(BSU-IS01-CF1) Balance sheet UNCLASSIFIED, Income Statement, Cash Flow Statement</rpart:Description>
         <rpart:ReportingStyleCode>BSU-IS01-CF1</rpart:ReportingStyleCode>
-        <rpart:ReportingStyleLink>https://github.com/seattlemethod/platinum/proof/fac/reporting-styles/BSU-IS01-CF1_schema.xsd</rpart:ReportingStyleLink>
-        <rpart:ReportingChecklistLink>https://github.com/seattlemethod/platinum/proof/reporting-checklist/reporting-checklist-BSU-IS01-CF1-rules-def.xml</rpart:ReportingChecklistLink>
-        <rpart:TypeSubtypeRulesLink>https://github.com/seattlemethod/platinum/proof/type-subtype/types-BSU-IS01-CF1-rules-def.xml</rpart:TypeSubtypeRulesLink>
-        <rpart:TemplatesLink>https://github.com/seattlemethod/platinum/proof/templates/disclosures-templates-ref.xml</rpart:TemplatesLink>
-        <rpart:ExemplarsLink>https://github.com/seattlemethod/platinum/proof/exemplars/disclosures-exemplarsList-ref.xml</rpart:ExemplarsLink>
+        <rpart:ReportingStyleLink>https://raw.githubusercontent.com/seattlemethod/proof/refs/heads/main/fac/reporting-styles/BSU-IS01-CF1_schema.xsd</rpart:ReportingStyleLink>
+        <rpart:ReportingChecklistLink>https://raw.githubusercontent.com/seattlemethod/proof/refs/heads/main/reporting-checklist/reporting-checklist-BSU-IS01-CF1-rules-def.xml</rpart:ReportingChecklistLink>
+        <rpart:TypeSubtypeRulesLink>https://raw.githubusercontent.com/seattlemethod/proof/refs/heads/main/type-subtype/types-BSU-IS01-CF1-rules-def.xml</rpart:TypeSubtypeRulesLink>
     </reference>
   </referenceLink>
 
@@ -61,11 +55,9 @@
     <reference xlink:type='resource' xlink:label='cm_ReportingStyle_lbl' xlink:role='https://github.com/seattlemethod/universal/cm/roles/reportingStyle'>
         <rpart:Description>(BSU-IS02-CF1) Balance sheet UNCLASSIFIED, Income Statement Alternative, Cash Flow Statement</rpart:Description>
         <rpart:ReportingStyleCode>BSU-IS02-CF1</rpart:ReportingStyleCode>
-        <rpart:ReportingStyleLink>https://github.com/seattlemethod/platinum/proof/fac/reporting-styles/BSU-IS02-CF1_schema.xsd</rpart:ReportingStyleLink>
-        <rpart:ReportingChecklistLink>https://github.com/seattlemethod/platinum/proof/reporting-checklist/reporting-checklist-BSU-IS02-CF1-rules-def.xml</rpart:ReportingChecklistLink>
-        <rpart:TypeSubtypeRulesLink>https://github.com/seattlemethod/platinum/proof/type-subtype/types-BSU-IS02-CF1-rules-def.xml</rpart:TypeSubtypeRulesLink>
-        <rpart:TemplatesLink>https://github.com/seattlemethod/platinum/proof/templates/disclosures-templates-ref.xml</rpart:TemplatesLink>
-        <rpart:ExemplarsLink>https://github.com/seattlemethod/platinum/proof/exemplars/disclosures-exemplarsList-ref.xml</rpart:ExemplarsLink>
+        <rpart:ReportingStyleLink>https://raw.githubusercontent.com/seattlemethod/proof/refs/heads/main/fac/reporting-styles/BSU-IS02-CF1_schema.xsd</rpart:ReportingStyleLink>
+        <rpart:ReportingChecklistLink>https://raw.githubusercontent.com/seattlemethod/proof/refs/heads/main/reporting-checklist/reporting-checklist-BSU-IS02-CF1-rules-def.xml</rpart:ReportingChecklistLink>
+        <rpart:TypeSubtypeRulesLink>https://raw.githubusercontent.com/seattlemethod/proof/refs/heads/main/type-subtype/types-BSU-IS02-CF1-rules-def.xml</rpart:TypeSubtypeRulesLink>
     </reference>
   </referenceLink>
 
@@ -75,11 +67,9 @@
     <reference xlink:type='resource' xlink:label='cm_ReportingStyle_lbl' xlink:role='https://github.com/seattlemethod/universal/cm/roles/reportingStyle'>
         <rpart:Description>(NET-IS01-CF1) Statement of NET ASSETS, cash flow statement NORMAL, Typical Income Statement</rpart:Description>
         <rpart:ReportingStyleCode>NET-IS01-CF1</rpart:ReportingStyleCode>
-        <rpart:ReportingStyleLink>https://github.com/seattlemethod/platinum/proof/fac/reporting-styles/NET-IS01-CF1_schema.xsd</rpart:ReportingStyleLink>
-        <rpart:ReportingChecklistLink>https://github.com/seattlemethod/platinum/proof/reporting-checklist/reporting-checklist-NET-IS01-CF1-rules-def.xml</rpart:ReportingChecklistLink>
-        <rpart:TypeSubtypeRulesLink>https://github.com/seattlemethod/platinum/proof/type-subtype/type-subtype.xsd</rpart:TypeSubtypeRulesLink>
-        <rpart:TemplatesLink>https://github.com/seattlemethod/platinum/proof/templates/disclosures-templates-ref.xml</rpart:TemplatesLink>
-        <rpart:ExemplarsLink>https://github.com/seattlemethod/platinum/proof/exemplars/disclosures-exemplarsList-ref.xml</rpart:ExemplarsLink>
+        <rpart:ReportingStyleLink>https://raw.githubusercontent.com/seattlemethod/proof/refs/heads/main/fac/reporting-styles/NET-IS01-CF1_schema.xsd</rpart:ReportingStyleLink>
+        <rpart:ReportingChecklistLink>https://raw.githubusercontent.com/seattlemethod/proof/refs/heads/main/reporting-checklist/reporting-checklist-NET-IS01-CF1-rules-def.xml</rpart:ReportingChecklistLink>
+        <rpart:TypeSubtypeRulesLink>https://raw.githubusercontent.com/seattlemethod/proof/refs/heads/main/type-subtype/type-subtype.xsd</rpart:TypeSubtypeRulesLink>
     </reference>
   </referenceLink>
 
@@ -89,11 +79,9 @@
     <reference xlink:type='resource' xlink:label='cm_ReportingStyle_lbl' xlink:role='https://github.com/seattlemethod/universal/cm/roles/reportingStyle'>
         <rpart:Description>(NET-IS02-CF1) Statement of NET ASSETS, cash flow statement NORMAL, Alternative Income Statement</rpart:Description>
         <rpart:ReportingStyleCode>NET-IS02-CF1</rpart:ReportingStyleCode>
-        <rpart:ReportingStyleLink>https://github.com/seattlemethod/platinum/proof/fac/reporting-styles/NET-IS02-CF1_schema.xsd</rpart:ReportingStyleLink>
-        <rpart:ReportingChecklistLink>https://github.com/seattlemethod/platinum/proof/reporting-checklist/reporting-checklist-NET-IS02-CF1-rules-def.xml</rpart:ReportingChecklistLink>
-        <rpart:TypeSubtypeRulesLink>https://github.com/seattlemethod/platinum/proof/type-subtype/type-subtype.xsd</rpart:TypeSubtypeRulesLink>
-        <rpart:TemplatesLink>https://github.com/seattlemethod/platinum/proof/templates/disclosures-templates-ref.xml</rpart:TemplatesLink>
-        <rpart:ExemplarsLink>https://github.com/seattlemethod/platinum/proof/exemplars/disclosures-exemplarsList-ref.xml</rpart:ExemplarsLink>
+        <rpart:ReportingStyleLink>https://raw.githubusercontent.com/seattlemethod/proof/refs/heads/main/fac/reporting-styles/NET-IS02-CF1_schema.xsd</rpart:ReportingStyleLink>
+        <rpart:ReportingChecklistLink>https://raw.githubusercontent.com/seattlemethod/proof/refs/heads/main/reporting-checklist/reporting-checklist-NET-IS02-CF1-rules-def.xml</rpart:ReportingChecklistLink>
+        <rpart:TypeSubtypeRulesLink>https://raw.githubusercontent.com/seattlemethod/proof/refs/heads/main/type-subtype/type-subtype.xsd</rpart:TypeSubtypeRulesLink>
     </reference>
   </referenceLink>
 
@@ -105,11 +93,9 @@
     <reference xlink:type='resource' xlink:label='cm_ReportingStyle_lbl' xlink:role='https://github.com/seattlemethod/universal/cm/roles/reportingStyle'>
         <rpart:Description>(REFERENCE) Reference Implementation</rpart:Description>
         <rpart:ReportingStyleCode>REFERENCE</rpart:ReportingStyleCode>
-        <rpart:ReportingStyleLink>https://github.com/seattlemethod/platinum/proof/fac/reporting-styles/BSC-IS01-CF1_schema.xsd</rpart:ReportingStyleLink>
-        <rpart:ReportingChecklistLink>https://github.com/seattlemethod/platinum/proof/reporting-checklist/reporting-checklist-rules-def.xml</rpart:ReportingChecklistLink>
-        <rpart:TypeSubtypeRulesLink>https://github.com/seattlemethod/platinum/proof/type-subtype/type-subtype.xsd</rpart:TypeSubtypeRulesLink>
-        <rpart:TemplatesLink>https://github.com/seattlemethod/platinum/proof/templates/disclosures-templates-ref.xml</rpart:TemplatesLink>
-        <rpart:ExemplarsLink>https://github.com/seattlemethod/platinum/proof/exemplars/disclosures-exemplarsList-ref.xml</rpart:ExemplarsLink>
+        <rpart:ReportingStyleLink>https://raw.githubusercontent.com/seattlemethod/proof/refs/heads/main/fac/reporting-styles/BSC-IS01-CF1_schema.xsd</rpart:ReportingStyleLink>
+        <rpart:ReportingChecklistLink>https://raw.githubusercontent.com/seattlemethod/proof/refs/heads/main/reporting-checklist/reporting-checklist-rules-def.xml</rpart:ReportingChecklistLink>
+        <rpart:TypeSubtypeRulesLink>https://raw.githubusercontent.com/seattlemethod/proof/refs/heads/main/type-subtype/type-subtype.xsd</rpart:TypeSubtypeRulesLink>
     </reference>
   </referenceLink>
 
