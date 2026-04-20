@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created by Charles Hoffman, CPA: 4/15/2021 -->
+<linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'><arcroleRef xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#all" arcroleURI="http://xbrl.org/int/dim/arcrole/all"/>
+<arcroleRef xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member" arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member"/>
+<roleRef xlink:type='simple' xlink:href='../fac.xsd#CashFlowStatement' roleURI='https://github.com/seattlemethod/fac/role/CashFlowStatement' /><presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/fac/role/CashFlowStatement">
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_CashFlowStatementTable" xlink:label="fac_CashFlowStatementTable"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_CashFlowStatementLineItems" xlink:label="fac_CashFlowStatementLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_CashFlowStatementTable" xlink:to="fac_CashFlowStatementLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NetCashFlowRollUp" xlink:label="fac_NetCashFlowRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_CashFlowStatementLineItems" xlink:to="fac_NetCashFlowRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NetCashFlowFromOperatingActivities" xlink:label="fac_NetCashFlowFromOperatingActivities"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_NetCashFlowRollUp" xlink:to="fac_NetCashFlowFromOperatingActivities" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NetCashFlowFromInvestingActivities" xlink:label="fac_NetCashFlowFromInvestingActivities"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_NetCashFlowRollUp" xlink:to="fac_NetCashFlowFromInvestingActivities" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NetCashFlowFromFinancingActivities" xlink:label="fac_NetCashFlowFromFinancingActivities"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_NetCashFlowRollUp" xlink:to="fac_NetCashFlowFromFinancingActivities" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NetCashFlow" xlink:label="fac_NetCashFlow"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_NetCashFlowRollUp" xlink:to="fac_NetCashFlow" order="4" use="optional"/>
+</presentationLink><calculationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/fac/role/CashFlowStatement">
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NetCashFlow" xlink:label="fac_NetCashFlow"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NetCashFlowFromOperatingActivities" xlink:label="fac_NetCashFlowFromOperatingActivities"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_NetCashFlow" xlink:to="fac_NetCashFlowFromOperatingActivities" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NetCashFlowFromInvestingActivities" xlink:label="fac_NetCashFlowFromInvestingActivities"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_NetCashFlow" xlink:to="fac_NetCashFlowFromInvestingActivities" order="2" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NetCashFlowFromFinancingActivities" xlink:label="fac_NetCashFlowFromFinancingActivities"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_NetCashFlow" xlink:to="fac_NetCashFlowFromFinancingActivities" order="3" weight="1" use="optional"/>
+</calculationLink><definitionLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/fac/role/CashFlowStatement" xlink:title="401-Cash Flow Statement">
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_CashFlowStatementLineItems" xlink:label="fac_CashFlowStatementLineItems"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_CashFlowStatementTable" xlink:label="fac_CashFlowStatementTable"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="fac_CashFlowStatementLineItems" xlink:to="fac_CashFlowStatementTable" order="1" use="optional" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xbrldt:contextElement="segment" xbrldt:closed="true"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NetCashFlow" xlink:label="fac_NetCashFlow"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_CashFlowStatementLineItems" xlink:to="fac_NetCashFlow" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NetCashFlowFromOperatingActivities" xlink:label="fac_NetCashFlowFromOperatingActivities"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_CashFlowStatementLineItems" xlink:to="fac_NetCashFlowFromOperatingActivities" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NetCashFlowFromInvestingActivities" xlink:label="fac_NetCashFlowFromInvestingActivities"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_CashFlowStatementLineItems" xlink:to="fac_NetCashFlowFromInvestingActivities" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NetCashFlowFromFinancingActivities" xlink:label="fac_NetCashFlowFromFinancingActivities"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_CashFlowStatementLineItems" xlink:to="fac_NetCashFlowFromFinancingActivities" order="5" use="optional"/>
+</definitionLink></linkbase>

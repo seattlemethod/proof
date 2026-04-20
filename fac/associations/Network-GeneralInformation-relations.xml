@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created by Charles Hoffman, CPA: 4/15/2021 -->
+<linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'><arcroleRef xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#all" arcroleURI="http://xbrl.org/int/dim/arcrole/all"/>
+<arcroleRef xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member" arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member"/>
+<roleRef xlink:type='simple' xlink:href='../fac.xsd#GeneralInformation' roleURI='https://github.com/seattlemethod/fac/role/GeneralInformation' /><presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/fac/role/GeneralInformation">
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_GeneralInformationTable" xlink:label="fac_GeneralInformationTable"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_GeneralInformationLineItems" xlink:label="fac_GeneralInformationLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_GeneralInformationTable" xlink:to="fac_GeneralInformationLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_GeneralInformationHierarchy" xlink:label="fac_GeneralInformationHierarchy"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_GeneralInformationLineItems" xlink:to="fac_GeneralInformationHierarchy" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_EconomicEntityName" xlink:label="fac_EconomicEntityName"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_GeneralInformationHierarchy" xlink:to="fac_EconomicEntityName" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_ReportingStyleCode" xlink:label="fac_ReportingStyleCode"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_GeneralInformationHierarchy" xlink:to="fac_ReportingStyleCode" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_BalanceSheetDate" xlink:label="fac_BalanceSheetDate"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_GeneralInformationHierarchy" xlink:to="fac_BalanceSheetDate" order="3" use="optional"/>
+</presentationLink><!-- NONE --><definitionLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/fac/role/GeneralInformation" xlink:title="001-General Information">
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_GeneralInformationLineItems" xlink:label="fac_GeneralInformationLineItems"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_GeneralInformationTable" xlink:label="fac_GeneralInformationTable"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="fac_GeneralInformationLineItems" xlink:to="fac_GeneralInformationTable" order="1" use="optional" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xbrldt:contextElement="segment" xbrldt:closed="true"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_EconomicEntityName" xlink:label="fac_EconomicEntityName"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_GeneralInformationLineItems" xlink:to="fac_EconomicEntityName" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_BalanceSheetDate" xlink:label="fac_BalanceSheetDate"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_GeneralInformationLineItems" xlink:to="fac_BalanceSheetDate" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_ReportingStyleCode" xlink:label="fac_ReportingStyleCode"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_GeneralInformationLineItems" xlink:to="fac_ReportingStyleCode" order="4" use="optional"/>
+</definitionLink></linkbase>

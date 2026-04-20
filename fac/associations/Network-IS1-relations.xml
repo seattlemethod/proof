@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created by Charles Hoffman, CPA: 4/15/2021 -->
+<linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'><arcroleRef xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#all" arcroleURI="http://xbrl.org/int/dim/arcrole/all"/>
+<arcroleRef xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member" arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member"/>
+<roleRef xlink:type='simple' xlink:href='../fac.xsd#IS1' roleURI='https://github.com/seattlemethod/fac/role/IS1' /><presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/fac/role/IS1">
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeStatementTable" xlink:label="fac_IncomeStatementTable"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeStatementLineItems" xlink:label="fac_IncomeStatementLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_IncomeStatementTable" xlink:to="fac_IncomeStatementLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NetIncomeLossRollUp" xlink:label="fac_NetIncomeLossRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_IncomeStatementLineItems" xlink:to="fac_NetIncomeLossRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_Revenue" xlink:label="fac_Revenue"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_NetIncomeLossRollUp" xlink:to="fac_Revenue" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_Expenses" xlink:label="fac_Expenses"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_NetIncomeLossRollUp" xlink:to="fac_Expenses" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_Gains" xlink:label="fac_Gains"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_NetIncomeLossRollUp" xlink:to="fac_Gains" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_Losses" xlink:label="fac_Losses"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_NetIncomeLossRollUp" xlink:to="fac_Losses" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NetIncomeLoss" xlink:label="fac_NetIncomeLoss"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="fac_NetIncomeLossRollUp" xlink:to="fac_NetIncomeLoss" order="5" use="optional"/>
+</presentationLink><calculationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/fac/role/IS1">
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NetIncomeLoss" xlink:label="fac_NetIncomeLoss"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_Revenue" xlink:label="fac_Revenue"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_NetIncomeLoss" xlink:to="fac_Revenue" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_Expenses" xlink:label="fac_Expenses"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_NetIncomeLoss" xlink:to="fac_Expenses" order="2" weight="-1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_Gains" xlink:label="fac_Gains"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_NetIncomeLoss" xlink:to="fac_Gains" order="3" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_Losses" xlink:label="fac_Losses"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_NetIncomeLoss" xlink:to="fac_Losses" order="4" weight="-1" use="optional"/>
+</calculationLink><definitionLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/fac/role/IS1">
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeStatementLineItems" xlink:label="fac_IncomeStatementLineItems"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeStatementTable" xlink:label="fac_IncomeStatementTable"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="fac_IncomeStatementLineItems" xlink:to="fac_IncomeStatementTable" order="1" use="optional" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xbrldt:contextElement="segment" xbrldt:closed="true"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NetIncomeLossRollUp" xlink:label="fac_NetIncomeLossRollUp"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeStatementLineItems" xlink:to="fac_NetIncomeLossRollUp" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_Revenue" xlink:label="fac_Revenue"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeStatementLineItems" xlink:to="fac_Revenue" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_Expenses" xlink:label="fac_Expenses"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeStatementLineItems" xlink:to="fac_Expenses" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NetIncomeLoss" xlink:label="fac_NetIncomeLoss"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeStatementLineItems" xlink:to="fac_NetIncomeLoss" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_Gains" xlink:label="fac_Gains"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeStatementLineItems" xlink:to="fac_Gains" order="6" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_Losses" xlink:label="fac_Losses"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_IncomeStatementLineItems" xlink:to="fac_Losses" order="7" use="optional"/>
+</definitionLink></linkbase>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created by Charles Hoffman, CPA: 4/15/2021 -->
+<linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'><arcroleRef xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#all" arcroleURI="http://xbrl.org/int/dim/arcrole/all"/>
+
+<roleRef xlink:type='simple' xlink:href='../fac.xsd#BSC' roleURI='https://github.com/seattlemethod/fac/role/BSC' />
+
+<calculationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="https://github.com/seattlemethod/fac/role/BSC">
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_Assets" xlink:label="fac_Assets"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_CurrentAssets" xlink:label="fac_CurrentAssets"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_Assets" xlink:to="fac_CurrentAssets" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NoncurrentAssets" xlink:label="fac_NoncurrentAssets"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_Assets" xlink:to="fac_NoncurrentAssets" order="2" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_LiabilitiesAndEquity" xlink:label="fac_LiabilitiesAndEquity"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_Liabilities" xlink:label="fac_Liabilities"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_LiabilitiesAndEquity" xlink:to="fac_Liabilities" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_CurrentLiabilities" xlink:label="fac_CurrentLiabilities"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_Liabilities" xlink:to="fac_CurrentLiabilities" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_NoncurrentLiabilities" xlink:label="fac_NoncurrentLiabilities"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_Liabilities" xlink:to="fac_NoncurrentLiabilities" order="2" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_Equity" xlink:label="fac_Equity"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_LiabilitiesAndEquity" xlink:to="fac_Equity" order="2" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_EquityAttributableToControllingInterests" xlink:label="fac_EquityAttributableToControllingInterests"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_Equity" xlink:to="fac_EquityAttributableToControllingInterests" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="../fac.xsd#fac_EquityAttributableToNoncontrollingInterests" xlink:label="fac_EquityAttributableToNoncontrollingInterests"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_Equity" xlink:to="fac_EquityAttributableToNoncontrollingInterests" order="2" weight="1" use="optional"/>
+</calculationLink>
+
+
+</linkbase>
