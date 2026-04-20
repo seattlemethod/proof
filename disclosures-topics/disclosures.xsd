@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 11/1/2021 9:57:18 AM -->
+<?twinfox name='CreatedBy' value='Charles Hoffman, CPA'?>
+<?twinfox name='CreationDateTime' value='11/1/2021 9:57:18 AM'?>
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+ 
+  xmlns:disclosures='https://github.com/seattlemethod/disclosures'
+  targetNamespace='https://github.com/seattlemethod/disclosures'
+ 
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+    <documentation>Reporting Scheme Disclosures</documentation>
+    <appinfo>
+      <link:roleType roleURI='https://github.com/seattlemethod/disclosures/role/Disclosures' id='Disclosures'>
+        <link:definition>Disclosures</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/labelLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='disclosures-lab.xml' xlink:title='Label Links, all' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/labelLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='disclosures-doc.xml' xlink:title='Documentation Links, all' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/referenceLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='disclosures-ref.xml' xlink:title='Reference Links, all' />
+    </appinfo>
+  </annotation>
+  <import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+  <import namespace='http://www.xbrl.org/2003/linkbase' schemaLocation='http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd' />
+ 
+    <complexType abstract='false' mixed='false' name='disclosureItemType'>
+        <simpleContent>
+           <restriction base='xbrli:tokenItemType'>
+           <attributeGroup ref='xbrli:nonNumericItemAttrs' />
+           </restriction>
+        </simpleContent>
+    </complexType>
+  <element id='disclosures_AssetsRollForward' name='AssetsRollForward' type='disclosures:disclosureItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
+  <element id='disclosures_AssetsRollUp' name='AssetsRollUp' type='disclosures:disclosureItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
+  <element id='disclosures_BalanceSheet' name='BalanceSheet' type='disclosures:disclosureItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
+  <element id='disclosures_BasisOfReporting' name='BasisOfReporting' type='disclosures:disclosureItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
+  <element id='disclosures_CashFlowStatement' name='CashFlowStatement' type='disclosures:disclosureItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
+  <element id='disclosures_ChangesInEquity' name='ChangesInEquity' type='disclosures:disclosureItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
+  <element id='disclosures_ComprehensiveIncome' name='ComprehensiveIncome' type='disclosures:disclosureItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
+  <element id='disclosures_FinancialHighlights' name='FinancialHighlights' type='disclosures:disclosureItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
+  <element id='disclosures_IncomeStatement' name='IncomeStatement' type='disclosures:disclosureItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
+  <element id='disclosures_IncomeStatementAlternative' name='IncomeStatementAlternative' type='disclosures:disclosureItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
+  <element id='disclosures_LiabilitiesAndEquityRollUp' name='LiabilitiesAndEquityRollUp' type='disclosures:disclosureItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
+  <element id='disclosures_NatureOfOperations' name='NatureOfOperations' type='disclosures:disclosureItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
+  <element id='disclosures_NetAssetsRollUp' name='NetAssetsRollUp' type='disclosures:disclosureItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
+  <element id='disclosures_NetCashFlowRollUp' name='NetCashFlowRollUp' type='disclosures:disclosureItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
+  <element id='disclosures_PriorPeriodError' name='PriorPeriodError' type='disclosures:disclosureItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
+  <element id='disclosures_PriorPeriodErrorAlternative' name='PriorPeriodErrorAlternative' type='disclosures:disclosureItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
+  <element id='disclosures_RevenueRecognitionPolicy' name='RevenueRecognitionPolicy' type='disclosures:disclosureItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
+  <element id='disclosures_SegmentRevenues' name='SegmentRevenues' type='disclosures:disclosureItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
+  <element id='disclosures_StockPlanActivity' name='StockPlanActivity' type='disclosures:disclosureItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
+  <element id='disclosures_VarianceAnalysis' name='VarianceAnalysis' type='disclosures:disclosureItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' abstract='true' />
+ 
+</schema>

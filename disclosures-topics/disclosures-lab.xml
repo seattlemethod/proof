@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 11/1/2021 9:57:18 AM -->
+<?twinfox name='CreatedBy' value='Charles Hoffman, CPA'?>
+<?twinfox name='CreationDateTime' value='11/1/2021 9:57:18 AM'?>
+<linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+  <roleRef xlink:type='simple' xlink:href='http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd#negatedLabel' roleURI='http://www.xbrl.org/2009/role/negatedLabel' />
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+ 
+    <loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_AssetsRollForward' xlink:label='disclosures_AssetsRollForward' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='disclosures_AssetsRollForward' xlink:to='disclosures_AssetsRollForward_lbl' />
+    <label xlink:type='resource' xlink:label='disclosures_AssetsRollForward_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Assets Roll Forward</label>
+ 
+    <loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_AssetsRollUp' xlink:label='disclosures_AssetsRollUp' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='disclosures_AssetsRollUp' xlink:to='disclosures_AssetsRollUp_lbl' />
+    <label xlink:type='resource' xlink:label='disclosures_AssetsRollUp_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Assets Roll Up</label>
+ 
+    <loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_BalanceSheet' xlink:label='disclosures_BalanceSheet' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='disclosures_BalanceSheet' xlink:to='disclosures_BalanceSheet_lbl' />
+    <label xlink:type='resource' xlink:label='disclosures_BalanceSheet_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Balance Sheet</label>
+ 
+    <loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_BasisOfReporting' xlink:label='disclosures_BasisOfReporting' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='disclosures_BasisOfReporting' xlink:to='disclosures_BasisOfReporting_lbl' />
+    <label xlink:type='resource' xlink:label='disclosures_BasisOfReporting_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Basis of Reporting</label>
+ 
+    <loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_CashFlowStatement' xlink:label='disclosures_CashFlowStatement' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='disclosures_CashFlowStatement' xlink:to='disclosures_CashFlowStatement_lbl' />
+    <label xlink:type='resource' xlink:label='disclosures_CashFlowStatement_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Cash Flow Statement</label>
+ 
+    <loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_ChangesInEquity' xlink:label='disclosures_ChangesInEquity' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='disclosures_ChangesInEquity' xlink:to='disclosures_ChangesInEquity_lbl' />
+    <label xlink:type='resource' xlink:label='disclosures_ChangesInEquity_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Changes in Equity</label>
+ 
+    <loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_ComprehensiveIncome' xlink:label='disclosures_ComprehensiveIncome' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='disclosures_ComprehensiveIncome' xlink:to='disclosures_ComprehensiveIncome_lbl' />
+    <label xlink:type='resource' xlink:label='disclosures_ComprehensiveIncome_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Comprehensive Income</label>
+ 
+    <loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_FinancialHighlights' xlink:label='disclosures_FinancialHighlights' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='disclosures_FinancialHighlights' xlink:to='disclosures_FinancialHighlights_lbl' />
+    <label xlink:type='resource' xlink:label='disclosures_FinancialHighlights_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Financial Highlights</label>
+ 
+    <loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_IncomeStatement' xlink:label='disclosures_IncomeStatement' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='disclosures_IncomeStatement' xlink:to='disclosures_IncomeStatement_lbl' />
+    <label xlink:type='resource' xlink:label='disclosures_IncomeStatement_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Income Statement</label>
+ 
+    <loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_IncomeStatementAlternative' xlink:label='disclosures_IncomeStatementAlternative' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='disclosures_IncomeStatementAlternative' xlink:to='disclosures_IncomeStatementAlternative_lbl' />
+    <label xlink:type='resource' xlink:label='disclosures_IncomeStatementAlternative_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Income Statement Alternative</label>
+ 
+    <loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_LiabilitiesAndEquityRollUp' xlink:label='disclosures_LiabilitiesAndEquityRollUp' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='disclosures_LiabilitiesAndEquityRollUp' xlink:to='disclosures_LiabilitiesAndEquityRollUp_lbl' />
+    <label xlink:type='resource' xlink:label='disclosures_LiabilitiesAndEquityRollUp_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Liabilities and Equity Roll Up</label>
+ 
+    <loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_NatureOfOperations' xlink:label='disclosures_NatureOfOperations' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='disclosures_NatureOfOperations' xlink:to='disclosures_NatureOfOperations_lbl' />
+    <label xlink:type='resource' xlink:label='disclosures_NatureOfOperations_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Nature of Operations</label>
+ 
+    <loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_NetAssetsRollUp' xlink:label='disclosures_NetAssetsRollUp' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='disclosures_NetAssetsRollUp' xlink:to='disclosures_NetAssetsRollUp_lbl' />
+    <label xlink:type='resource' xlink:label='disclosures_NetAssetsRollUp_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Net Assets Roll Up</label>
+ 
+    <loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_NetCashFlowRollUp' xlink:label='disclosures_NetCashFlowRollUp' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='disclosures_NetCashFlowRollUp' xlink:to='disclosures_NetCashFlowRollUp_lbl' />
+    <label xlink:type='resource' xlink:label='disclosures_NetCashFlowRollUp_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Net Cash Flow Roll Up</label>
+ 
+    <loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_PriorPeriodError' xlink:label='disclosures_PriorPeriodError' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='disclosures_PriorPeriodError' xlink:to='disclosures_PriorPeriodError_lbl' />
+    <label xlink:type='resource' xlink:label='disclosures_PriorPeriodError_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Prior Period Error</label>
+ 
+    <loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_PriorPeriodErrorAlternative' xlink:label='disclosures_PriorPeriodErrorAlternative' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='disclosures_PriorPeriodErrorAlternative' xlink:to='disclosures_PriorPeriodErrorAlternative_lbl' />
+    <label xlink:type='resource' xlink:label='disclosures_PriorPeriodErrorAlternative_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Prior Period Error Alternative</label>
+ 
+    <loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_RevenueRecognitionPolicy' xlink:label='disclosures_RevenueRecognitionPolicy' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='disclosures_RevenueRecognitionPolicy' xlink:to='disclosures_RevenueRecognitionPolicy_lbl' />
+    <label xlink:type='resource' xlink:label='disclosures_RevenueRecognitionPolicy_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Revenue Recognition Policy</label>
+ 
+    <loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_SegmentRevenues' xlink:label='disclosures_SegmentRevenues' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='disclosures_SegmentRevenues' xlink:to='disclosures_SegmentRevenues_lbl' />
+    <label xlink:type='resource' xlink:label='disclosures_SegmentRevenues_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Segment Revenues</label>
+ 
+    <loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_StockPlanActivity' xlink:label='disclosures_StockPlanActivity' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='disclosures_StockPlanActivity' xlink:to='disclosures_StockPlanActivity_lbl' />
+    <label xlink:type='resource' xlink:label='disclosures_StockPlanActivity_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Stock Plan Activity</label>
+ 
+    <loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_VarianceAnalysis' xlink:label='disclosures_VarianceAnalysis' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='disclosures_VarianceAnalysis' xlink:to='disclosures_VarianceAnalysis_lbl' />
+    <label xlink:type='resource' xlink:label='disclosures_VarianceAnalysis_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Variance Analysis</label>
+ 
+  </labelLink>
+</linkbase>
