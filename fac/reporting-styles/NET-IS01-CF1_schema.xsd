@@ -14,7 +14,7 @@
   elementFormDefault='qualified'
   attributeFormDefault='unqualified'>
   <annotation>
-    <documentation>PROOF-NET-IS01-CF1</documentation>
+    <documentation>NET-IS01-CF1</documentation>
     <appinfo>
         <link:linkbaseRef  xlink:href='../rules-mapping/mapping-definition.xml' xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' />
     </appinfo>
